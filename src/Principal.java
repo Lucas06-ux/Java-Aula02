@@ -5,23 +5,25 @@ public class Principal {
         //Criar um objeto tenis com os valores digitados pelo usuário
         //Exibir os valores que estão dentro do objeto
 
-        Scanner leitor = new Scanner(System.in);
-        System.out.println("Bem vindo! Por favor, escreva o modelo do tênis que você deseja ");
-        String modelo = leitor.next();
+        Tenis nike = new Tenis();
+        nike.cor = "Branco e preto ";
+        nike.modelo = "Air Force";
+        nike.preco = 750 ;
+        nike.tamanho = 42;
+        nike.disponivel = true;
 
-        System.out.println("Qual a cor que você deseja?");
-        String cor= leitor.next();
+        System.out.println(nike.cor);
 
-        System.out.println("Que tamanho você precisa?");
-        int tamanho = leitor.nextInt();
+        Tenis puma = new Tenis();
+        puma.cor = "Preto";
+        puma.modelo = "Puma Smash V2";
+        puma.preco = 270;
+        puma.tamanho = 40;
+        puma.disponivel = true;
 
-        System.out.println("Diga o valor do tênis");
-        double preco = leitor.nextDouble();
-        System.out.println("Ele ainda está disponível?");
-        boolean disponivel= leitor.nextBoolean();
+        System.out.println("Os tênis " + nike.modelo + " e o " + puma.modelo + " são os que temos disponíveis na loja!");
 
-        System.out.println("O tênis " + modelo + " da cor " +cor+ " com o tamanho " + tamanho + " está cadastrado, no valor de R$" + preco + " e " +disponivel );
-        
+
 
     }
 
