@@ -16,4 +16,13 @@ public class Tenis {
         valor += valor * porcentagem/100;
 
     }
+
+    double aplicarDesconto(float porcentagem){
+
+        double  valorComDesconto;
+        valorComDesconto = valor - valor*porcentagem/100;
+        return valorComDesconto;
+
+    }
+
 }

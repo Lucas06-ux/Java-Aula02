@@ -64,6 +64,12 @@ public class Principal {
         //Exibir o valor atualizado do tenis
 
         System.out.println("Valor atualizado: " + tenis1.valor);
+
+        //Chamar o método para calcular o preço com desconto
+
+        double desconto = tenis1.aplicarDesconto(50);
+        System.out.println("Tenis com desconto: " + desconto);
+
     }
 
 }
